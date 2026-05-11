@@ -13,7 +13,7 @@ export interface IBenefit {
 export interface IBenefitBullet {
     title: string;
     description: string;
-    icon: JSX.Element;
+    icon: JSX.Element | null;
 }
 
 export interface IPricing {
@@ -50,4 +50,8 @@ export interface ISocials {
     youtube?: string;
     x?: string;
     [key: string]: string | undefined;
+}
+export interface ISection {
+    title: string;
+    description: string;
 }

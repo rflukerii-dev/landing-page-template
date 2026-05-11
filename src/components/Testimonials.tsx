@@ -3,9 +3,10 @@ import Image from 'next/image';
 import { testimonials } from '@/data/testimonials';
 
 const Testimonials: React.FC = () => {
+    const visible = testimonials.filter(t => t.message !== '');
     return (
         <div className="grid gap-14 max-w-lg w-full mx-auto lg:gap-8 lg:grid-cols-3 lg:max-w-full">
-            {testimonials.map((testimonial, index) => (
+            {visible.map((testimonial, index) => (
                 <div
                     key={index}
                     className=""

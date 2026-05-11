@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 :root {
+  --background: #FFF;
+  --foreground: #FFF;
+  --primary: #FFF;
+  --secondary: #FFF;
+
+  --primary-accent: #FFF;
+  --foreground-accent: #FFF;
+  --hero-background: #FFF;
+  --cta-background: #FFF;
+}
+
+.finwise {
   --background: #ffffff;
   --foreground: #171717;
   --primary: #FED835;
@@ -11,6 +23,43 @@
   --primary-accent: #e5c230;
   --foreground-accent: #454545;
   --hero-background: #F3F3F5;
+  --cta-background: #050a02;
+}
+
+.mindhaven {
+  --background: #1E1B4B;
+  --foreground: #F8FAFC;
+  --primary: #71b4fb;
+  --secondary: #818CF8;
+
+  --primary-accent: #1d93e1;
+  --foreground-accent: #CBD5E1;
+  --hero-background: #312E81;
+  --cta-background: #050a02;
+}
+
+.daybreak {
+  --background: #2C1810;
+  --foreground: #FAF6F0;
+  --primary: #C2410C;
+  --secondary: #92400E;
+
+  --primary-accent: #EA580C;
+  --foreground-accent: #a15225 /*#78350F*/;
+  --hero-background: #451A03;
+  --cta-background: #050a02;
+}
+
+.whitewashed {
+  --background: #FFF;
+  --foreground: #FFF;
+  --primary: #FFF;
+  --secondary: #FFF;
+
+  --primary-accent: #FFF;
+  --foreground-accent: #FFF;
+  --hero-background: #FFF;
+  --cta-background: #FFF;
 }
 
 html {

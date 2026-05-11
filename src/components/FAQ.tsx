@@ -6,6 +6,8 @@ import SectionTitle from "./SectionTitle";
 import { faqs } from "@/data/faq";
 
 const FAQ: React.FC = () => {
+    const visible = faqs.filter(f => f.question !== '');
+    if (visible.length === 0) return null;
     return (
         <section id="faq" className="py-10 lg:py-20">
             <div className="flex flex-col lg:flex-row gap-10">
@@ -14,14 +16,14 @@ const FAQ: React.FC = () => {
                     <SectionTitle>
                         <h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left">Frequently Asked Questions</h2>
                     </SectionTitle>
-                    <p className="lg:mt-10 text-foreground-accent text-center lg:text-left">
+                    {/* <p className="lg:mt-10 text-foreground-accent text-center lg:text-left">
                         Ask us anything!
                     </p>
-                    <a href="mailto:" className="mt-3 block text-xl lg:text-4xl text-secondary font-semibold hover:underline text-center lg:text-left">help@finwise.com</a>
+                    <a href="mailto:" className="mt-3 block text-xl lg:text-4xl text-secondary font-semibold hover:underline text-center lg:text-left">help@finwise.com</a> */}
                 </div>
 
                 <div className="w-full lg:max-w-2xl mx-auto border-b">
-                    {faqs.map((faq, index) => (
+                    {visible.map((faq, index) => (
                         <div key={index} className="mb-7">
                             <Disclosure>
                                 {({ open }) => (

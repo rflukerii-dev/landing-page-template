@@ -8,35 +8,52 @@ import Container from "@/components/Container";
 import Section from "@/components/Section";
 import Stats from "@/components/Stats";
 import CTA from "@/components/CTA";
+import { sections } from "@/data/sections";
 
 const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
-      <Logos />
+      {/* <Logos /> */}
       <Container>
         <Benefits />
 
         <Section
           id="pricing"
-          title="Pricing"
-          description="Simple, transparent pricing. No surprises."
+          title={sections.pricing.title}
+          description={sections.pricing.description}
         >
           <Pricing />
         </Section>
 
         <Section
           id="testimonials"
-          title="What Our Clients Say"
-          description="Hear from those who have partnered with us."
+          title={sections.testimonials.title}
+          description={sections.testimonials.description}
         >
           <Testimonials />
         </Section>
 
+        {/* <Section
+          id="pricing"
+          title=""
+          description=""
+        >
+          <Pricing />
+        </Section>
+
+        <Section
+          id="testimonials"
+          title=""
+          description=""
+        >
+          <Testimonials />
+        </Section> */}
+
         <FAQ />
 
-        <Stats />
-        
+        {/* <Stats /> */}
+
         <CTA />
       </Container>
     </>
